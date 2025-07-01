@@ -1,3 +1,5 @@
+# --- Non GUI Version (Pretty Sure)
+
 import paramiko
 import smtplib
 from email.mime.text import MIMEText
