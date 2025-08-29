@@ -10,6 +10,7 @@ import threading
 import json
 import os
 from queue import Queue # For thread-safe GUI updates
+#---- Import python libaries
 
 # --- Configuration Defaults (can be overridden by GUI settings) ---
 CONFIG_FILE = 'server_monitor_config.json'
@@ -173,6 +174,8 @@ def get_cpu_load(ssh_client, server_host):
         return f"CPU Load on {server_host}: Exception - {e}"
 
 # --- GUI Classes ---
+# --- Only needed for the GUI
+ 
 class ServerConfigDialog(tk.Toplevel):
     def __init__(self, parent, server_info=None, app_settings=None):
         super().__init__(parent)
